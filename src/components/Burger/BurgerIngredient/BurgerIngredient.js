@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import classes from './BurgerIngredient.css';
 
-class BurgerIngredient extends CompositionEvent {
+class BurgerIngredient extends Component {
 render () {
     let ingredient = null;
 
@@ -20,13 +20,13 @@ render () {
             );
             break;
         case ('meat'): 
-            ingredient = <div className={classess.Meat}></div>
+            ingredient = <div className={classes.Meat}></div>
             break;
         case ('cheese'):
             ingredient = <div className={classes.Cheese}></div>
             break;
         case ('salad'): 
-            ingredient = <div className={classess.Salad}></div>
+            ingredient = <div className={classes.Salad}></div>
             break;
         case ('bacon'):
             ingredient = <div className={classes.Bacon}></div>
